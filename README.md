@@ -27,7 +27,6 @@ with open(file_to_load) as election_data:
 
     # Read the header
     header = next(reader)
-
 ```
 The data set provided was of each ballot, or also referred to as votes, and by counting each row and skipping the header, the total votes could be established.
 
@@ -104,7 +103,7 @@ The county votes were organized in the previous code and percentages can be calc
             largest_turnout = county_name
             largest_turnout_percentage = county_percentage
 ```
-The largest turnout can be proven by running a for loop that will run through each county and wiill be overridden by the highest total.
+The largest turnout can be proven by running a for loop that will run through each county and wiill be overridden until the the highest total is established.
 
 ---
 
