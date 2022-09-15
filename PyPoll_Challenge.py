@@ -6,10 +6,10 @@ import csv
 import os
 
 # Add a variable to load a file from a path.
-# issues with loading csv file after functioning the day before, though in the same directory, "election-analysis" added to string used to resolve issue
-file_to_load = os.path.join("election-analysis", "Resources", "election_results.csv")
+# issues with loading csv file after functioning the day before, though in the same directory, "election-analysis" added to beginning of string used to resolve issue
+file_to_load = os.path.join("Resources", "election_results.csv")
 # Add a variable to save the file to a path.
-file_to_save = os.path.join("election-analysis", "analysis", "election_results.txt")
+file_to_save = os.path.join("analysis", "election_results.txt")
 
 # Initialize a total vote counter.
 total_votes = 0
