@@ -20,7 +20,7 @@ The following results were established using [this dataset](Resources/election_r
 
   - Total Votes: *369,711*
 
-##### Code used:
+	##### Code used:
 ```    
 with open(file_to_load) as election_data:
     reader = csv.reader(election_data)
@@ -72,13 +72,14 @@ The data set provided was of each ballot, or also referred to as votes, and by c
 ```
 By adding multiple accumulators (x = x + 1 OR x += 1) within a for loop for categorizing each ballot by candidate and county, the data is organized while also storing seperate total counts.
 
-
+---
 
   - County Votes:
       - **Jefferson:** *10.5% (38,855)*
       - **Denver:** *82.8% (306,055)*
       - **Arapahoe:** *6.7% (24,801)*
 
+	##### Code used:
 ```
   for county_name in county_votes:
 
@@ -91,7 +92,11 @@ By adding multiple accumulators (x = x + 1 OR x += 1) within a for loop for cate
 ```
 The county votes were organized in the previous code and percentages could be easily calculated by dividing each total to the total votes.
 
+---
+
   - Largest County Turnout: **Denver**
+  
+	##### Code used:
 ```
        # 6f: Write an if statement to determine the winning county and get its vote count.
         if (turnout > largest_turnout_count) and (county_percentage > largest_turnout_percentage):
@@ -99,18 +104,29 @@ The county votes were organized in the previous code and percentages could be ea
             largest_turnout = county_name
             largest_turnout_percentage = county_percentage
 ```
-The largest turnout can easily be proven by using an if statement
+The largest turnout can easily be proven by running a for loop that will run through each county and wiill be overridden by the highest total.
+
+---
 
   - Candidate Votes:
       - **Charles Casper Stockham:** *23.0% (85,213)*
       - **Diana DeGette:** *73.8% (272,892)*
       - **Raymon Anthony Doane:** *3.1% (11,606)*
 
+	##### Code used:
+	The same tools were used for counting and categorizing the counties.
+
+---
+
   - Winner: 
       - **Winning Candidate:** *Diana DeGette*
       - **Winning Vote Count:** *272,892*
       - **Winning Percentage:** *73.8%*
 
+	##### Code used:
+	The same tools were used for classifying the largest turnout.
+
+---
   [This text file](analysis/election_results.txt) was created reflecting this results as well.
 
 
