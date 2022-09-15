@@ -90,7 +90,7 @@ By adding multiple accumulators (x = x + 1 OR x += 1) within a for loop for cate
         county_percentage = float(turnout) / float(total_votes) * 100
         turnout_results = (f"{county_name}: {county_percentage:.1f}% ({turnout:,})\n")
 ```
-The county votes were organized in the previous code and percentages could be easily calculated by dividing each total to the total votes.
+The county votes were organized in the previous code and percentages can be calculated by dividing each total to the total votes and multiplying by 100.
 
 ---
 
@@ -104,7 +104,7 @@ The county votes were organized in the previous code and percentages could be ea
             largest_turnout = county_name
             largest_turnout_percentage = county_percentage
 ```
-The largest turnout can easily be proven by running a for loop that will run through each county and wiill be overridden by the highest total.
+The largest turnout can be proven by running a for loop that will run through each county and wiill be overridden by the highest total.
 
 ---
 
