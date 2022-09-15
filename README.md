@@ -34,7 +34,7 @@ The data set provided was of each ballot, or also referred to as votes, and by c
 
 
 ```		
-		# For each row in the CSV file.
+# For each row in the CSV file.
     for row in reader:
 
         # Add to the total vote count
